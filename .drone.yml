@@ -34,7 +34,7 @@ publish:
         type: executable
         repository: LibrePilot
         package: next
-        version: Windows
+        version: Windows20172
         publish: true
         override: true
         target: $$BRANCH-$${COMMIT:0:6}-$$arch-tea-ci-package.exe
