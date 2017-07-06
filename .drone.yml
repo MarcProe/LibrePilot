@@ -49,4 +49,4 @@ notify:
       - https://hooks.slack.com/services/$$SLACK_HOOK
     content_type: application/json
     template: >
-      {"text": "Tea-CI Build #{{ build.number }} finished with a {{ build.status }} status. If successful, the packages for {{ build.branch }} $${COMMIT:0:8} can be downloaded <https://bintray.com/librepilot/LibrePilot/next/Windows/view/#files|here>"}
+      {"text": "Tea-CI Build #{{ build.number }} finished with a {{ build.status }} status. If successful, the packages for {{ build.branch }} $${COMMIT:0:8} can be downloaded <https://bintray.com/librepilot/LibrePilot/next/Windows20172/view/#files|here>"}
