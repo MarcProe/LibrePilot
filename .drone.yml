@@ -1,3 +1,6 @@
+# If you change this file, you have to regenerate the .drone.sec file!
+# Please refer to LP-394 for details, or ask on slack.
+
 build:
   image: teaci/msys$$arch
   pull: true
