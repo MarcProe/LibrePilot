@@ -13,9 +13,10 @@ build:
     - mingw32-make all_sdk_install
     - git config core.filemode false
     - mingw32-make build-info && cat build/build-info.txt
-    - mingw32-make fw_resource
-    - mingw32-make gcs
-    - mingw32-make package
+#    - mingw32-make fw_resource
+#    - mingw32-make gcs
+#    - mingw32-make package
+    - echo "test" > build/LibrePilot-dummy.exe
     - mv `ls build/LibrePilot-*.exe` build/$$BRANCH-$$COMMIT-$$arch-package.exe 
 
 clone:
@@ -48,4 +49,4 @@ notify:
       - https://hooks.slack.com/services/$$SLACK_HOOK
     content_type: application/json
     template: >
-      {"text": "Tea-CI Build #{{ build.number }} finished with a {{ build.status }} status. If successful, the packages for {{ build.branch }} $${COMMIT:0:8} can be downloaded <https://bintray.com/librepilot/LibrePilot/next/Windows/view/#files|here>"}
+      {"text": "Tea-CI Build #{{ build.number }} finished with a {{ build.status }} status. If successful, the packages for {{ build.branch }} $${COMMIT:0:8} can be downloaded <https://bintray.com/librepilot/LibrePilot/next/Windows20172/view/#files|here>"}
