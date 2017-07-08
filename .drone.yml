@@ -19,7 +19,7 @@ build:
     - mv `ls build/LibrePilot-*.exe` build/$$BRANCH-$$COMMIT-$$arch-package.exe 
 
 clone:
-  depth: 1000
+  depth: 1
   tags: true
 
 matrix:
